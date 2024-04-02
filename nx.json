@@ -19,6 +19,9 @@
       "cache": true,
       "dependsOn": ["^build"],
       "inputs": ["production", "^production"]
+    },
+    "build": {
+      "inputs": ["production", "^production"]
     }
   },
   "plugins": [

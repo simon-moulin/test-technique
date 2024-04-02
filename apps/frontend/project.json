@@ -4,6 +4,20 @@
   "sourceRoot": "apps/frontend/src",
   "projectType": "application",
   "tags": [],
-  "// targets": "to see all targets run: nx show project frontend --web",
-  "targets": {}
+  "targets": {
+    "serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npm run serve",
+        "cwd": "apps/frontend"
+      }
+    },
+    "test": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npm run test",
+        "cwd": "apps/frontend"
+      }
+    }
+  }
 }

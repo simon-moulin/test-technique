@@ -17,7 +17,6 @@ export default function TaskList({ tasks }: TaskListProps) {
 
     const handleAddAction = async () => {
         await addNewAction(newAction);
-        // Refresh tasks or any other necessary action after successful addition
     };
 
     return (

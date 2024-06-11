@@ -20,12 +20,10 @@ const useWebSocket = () => {
         });
 
         newSocket.on('updateQueue', (data: Action[]) => {
-            console.log('update queue', data)
             setQueue(data);
         });
 
         newSocket.on('updateCredits', (data: Credit[]) => {
-            console.log('update credits', data)
             setCredits(data);
         });
 
